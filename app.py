@@ -31,4 +31,5 @@ if __name__ == "__main__":
     with app.app_context():
         if User.query.count() == 0:  # Генерує користувачів тільки при умові відсутності їх у бд
             generate_fake_data(100)
+    generate_fake_data(100)
     app.run()
